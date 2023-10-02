@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digitális képkeret</title>
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body class="dark-mode">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-6">
+              <label for="urlInput">Kép url címe:</label>
+          </div>
+          <div class="col-md-6">
+              <input type="url" id="urlInput">
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+            <label for="imgWidth">Kép szélessége(pixelben):</label>
+        </div>
+        <div class="col-md-6">
+            <input type="number" id="imgWidth" min="0">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+            <label for="frameSize">Képkeret vastagsága:</label>
+        </div>
+        <div class="col-md-6">
+            <input type="number" id="frameSize" min="0">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+            <label for="frameColor">Képkeret színe:</label>
+        </div>
+        <div class="col-md-6">
+            <input type="color" id="frameColor">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <button class="btn btn-primary" id="submit">Mehet</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <img class="mx-auto d-block" src="/public/testimg.jpeg" alt="Digitális kép" id="img">
+        </div>
+      </div>
+
+      <footer class="row">
+        <hr>
+        <div class="col-md-6">
+          Tóth Kevin 14.S
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-primary" id="mode">Sötét/Világos mód váltás</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
